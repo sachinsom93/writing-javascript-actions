@@ -6,6 +6,6 @@ outputs:
   joke-output:
     description: The resulting joke from the icanhazdadjokes API
 
-run:
+runs:
   using: "node12"
   main: "main.js"
