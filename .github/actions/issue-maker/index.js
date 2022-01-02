@@ -8,8 +8,8 @@ async function run() {
     const token = core.getInput("repo-token");
 
     const octokit = new github.getOctokit(token);
-    console.log(octokit)
-    console.log(octokit.issues)
+    console.log(octokit.rest)
+    console.log(octokit.rest.issues)
     const newIssue = await octokit.issues.create({
       repo: github.context.repo.repo,
       owner: github.context.repo.owner,
